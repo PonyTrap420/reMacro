@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>icons/add.svg</file>
+        <file>icons/cmd.svg</file>
+        <file>icons/delete.svg</file>
+        <file>icons/down-arrow.svg</file>
+        <file>icons/expand.svg</file>
+        <file>icons/export.svg</file>
+        <file>icons/hidden.svg</file>
+        <file>icons/import.svg</file>
+        <file>icons/insert.svg</file>
+        <file>icons/keyboard.svg</file>
+        <file>icons/logout.svg</file>
+        <file>icons/loop.svg</file>
+        <file>icons/more.svg</file>
+        <file>icons/mouse.svg</file>
+        <file>icons/pause.svg</file>
+        <file>icons/play.svg</file>
+        <file>icons/record.svg</file>
+        <file>icons/stop.svg</file>
+        <file>icons/stoprec.svg</file>
+        <file>icons/text.svg</file>
+        <file>icons/visible.svg</file>
+        <file>icons/final/close.svg</file>
+        <file>icons/final/edit.svg</file>
+        <file>icons/final/globe.svg</file>
+        <file>icons/final/home.svg</file>
+        <file>icons/final/home-pressed.svg</file>
+        <file>icons/final/library.svg</file>
+        <file>icons/final/library-pressed.svg</file>
+        <file>icons/final/market.svg</file>
+        <file>icons/final/market-pressed.svg</file>
+        <file>icons/final/maximize.svg</file>
+        <file>icons/final/minimize.svg</file>
+        <file>icons/final/restore.svg</file>
+        <file>icons/final/user.svg</file>
+        <file>icons/final/user-pressed.svg</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>icons/reMacro.ico</file>
+    </qresource>
+</RCC>
