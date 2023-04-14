@@ -245,9 +245,9 @@ void MainWindow::SetupGUI(){
 
     //Create the min/max/close buttons
     QIcon icon1, icon2, icon3;
-    icon1.addFile(QString::fromUtf8(":/final/assets/final/minimize.svg"), QSize(), QIcon::Normal, QIcon::Off);
-    icon2.addFile(QString::fromUtf8(":/final/assets/final/maximize.svg"), QSize(), QIcon::Normal, QIcon::Off);
-    icon3.addFile(QString::fromUtf8(":/final/assets/final/close.svg"), QSize(), QIcon::Normal, QIcon::Off);
+    icon1.addFile(QString::fromUtf8(":/assets/icons/final/minimize.svg"), QSize(), QIcon::Normal, QIcon::Off);
+    icon2.addFile(QString::fromUtf8(":/assets/icons/final/maximize.svg"), QSize(), QIcon::Normal, QIcon::Off);
+    icon3.addFile(QString::fromUtf8(":/assets/icons/final/close.svg"), QSize(), QIcon::Normal, QIcon::Off);
 
     //pushButton->setIconSize(QSize(18, 18));
 
@@ -580,7 +580,7 @@ TaskFrame* MainWindow::AddTaskFrame(Task* _task, QWidget* parent,bool readOnly){
     pushButton->setObjectName(QString::fromUtf8("pushButton"));
     pushButton->setStyleSheet(QString::fromUtf8("background-color:none;"));
     QIcon icon4;
-    filepath = std::string(":/assets/assets/")+_task->GetTaskName()+std::string(".svg");
+    filepath = std::string(":/assets/icons/")+_task->GetTaskName()+std::string(".svg");
     std::transform(filepath.begin(), filepath.end(), filepath.begin(), ::tolower);
     icon4.addFile(QString::fromUtf8(filepath), QSize(), QIcon::Normal, QIcon::Off);
     pushButton->setIcon(icon4);
@@ -648,7 +648,6 @@ LoopTaskFrame* MainWindow::AddLoopTaskFrame(Task* _task, QWidget* parent, bool r
 
     QFrame *frame_36;
     QVBoxLayout *verticalLayout_73;
-    QFrame *frame_49;
     QFrame *frame_50;
     QHBoxLayout *horizontalLayout_29;
     QFrame *frame_61;
@@ -715,7 +714,7 @@ LoopTaskFrame* MainWindow::AddLoopTaskFrame(Task* _task, QWidget* parent, bool r
     pushButton->setObjectName(QString::fromUtf8("pushButton"));
     pushButton->setStyleSheet(QString::fromUtf8("background-color:none;"));
     QIcon icon4;
-    filepath = std::string(":/assets/assets/")+_task->GetTaskName()+std::string(".svg");
+    filepath = std::string(":/assets/icons/")+_task->GetTaskName()+std::string(".svg");
     std::transform(filepath.begin(), filepath.end(), filepath.begin(), ::tolower);
     icon4.addFile(QString::fromUtf8(filepath), QSize(), QIcon::Normal, QIcon::Off);
     pushButton->setIcon(icon4);
@@ -842,7 +841,7 @@ void MainWindow:: MacroActionClick(Task* task){
             m->SetKeystroke(fixCode[m->keystroke]);
         }
         QWidget* parent = ui->editor_list;
-        bool inLoop;
+        bool inLoop = false;
         LoopTask* m;
         TaskFrame* t;
 

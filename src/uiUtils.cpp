@@ -16,7 +16,7 @@ void Util::ToggleBtn(QPushButton* btn){
 
 void Util::UpdateButtonIcon(QPushButton* btn, bool pressed, int index){
 QIcon icon;
-QString iconPath = ":/assets/final/";
+QString iconPath = ":/assets/icons/final/";
 switch (index){
     case 0:
         iconPath += "home";

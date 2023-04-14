@@ -29,7 +29,7 @@ find_package(Qt6 REQUIRED COMPONENTS Network)
 
 
 #=================== INCLUSION OF Project Files ====================#
-set(FORMS_DIR "${CMAKE_SOURCE_DIR}/forms")
+set(FORMS_DIR "${CMAKE_SOURCE_DIR}/assets")
 set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
 set(SOURCE_DIR "${CMAKE_SOURCE_DIR}/src")
 set(SOURCE_DIR_EXT1 "${CMAKE_SOURCE_DIR}/src/Macro")
